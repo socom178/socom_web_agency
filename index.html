@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Socom Web Agency — Agence spécialisée en développement web, applications et solutions digitales. Nous transformons vos idées en expériences numériques premium." />
+  <meta name="keywords" content="agence web, création site web, développement application, solutions digitales, transformation numérique, Socom Web Agency" />
+  <meta property="og:title" content="Socom Web Agency — Solutions Digitales Premium" />
+  <meta property="og:description" content="Développement web, applications et transformation digitale pour les entreprises ambitieuses." />
+  <title>Socom Web Agency — Solutions Digitales Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====== NAVIGATION ======= -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#accueil" class="nav-logo">
+      <div class="logo-mark">S</div>
+      Socom<span style="color:var(--blue-light)">.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#processus">Processus</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;">
+        Devis gratuit
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="#apropos" onclick="toggleMenu()">À propos</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#realisations" onclick="toggleMenu()">Réalisations</a>
+  <a href="#processus" onclick="toggleMenu()">Processus</a>
+  <a href="#temoignages" onclick="toggleMenu()">Témoignages</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="#contact" onclick="toggleMenu()" class="btn btn-primary" style="margin-top:16px;">Demander un devis</a>
+</div>
+
+<!-- =============================================
+     HERO
+============================================= -->
+<section class="hero" id="accueil">
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-gradient"></div>
+
+  <div class="hero-inner">
+    <div class="hero-badge reveal">
+      <span class="dot"></span>
+      Agence Digitale Premium — Bénin & Afrique
+    </div>
+    <h1 class="display-xl hero-title reveal delay-1">
+      Votre Ambition<br/>
+      <span class="text-gradient">Digitale,</span><br/>
+      Notre Expertise
+    </h1>
+    <p class="hero-subtitle reveal delay-2">
+      Nous concevons des solutions web et applicatives sur mesure qui propulsent votre entreprise vers de nouveaux horizons. Du concept au déploiement, nous sommes votre partenaire digital.
+    </p>
+    <div class="hero-actions reveal delay-3">
+      <a href="#contact" class="btn btn-primary">
+        Demander un devis gratuit
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#services" class="btn btn-ghost">
+        Découvrir nos services
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12l4 4 4-4"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats reveal delay-4">
+      <div>
+        <div class="hero-stat-num" data-count="50">0+</div>
+        <div class="hero-stat-label">Projets livrés</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-count="40">0+</div>
+        <div class="hero-stat-label">Clients satisfaits</div>
+      </div>
+      <div>
+        <div class="hero-stat-num" data-count="3">0</div>
+        <div class="hero-stat-label">Années d'expertise</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">98%</div>
+        <div class="hero-stat-label">Taux de satisfaction</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TECH LOGOS BAND -->
+<div class="logos-band">
+  <div class="logos-track">
+    <span class="tech-logo">React.js</span>
+    <span class="tech-logo">Node.js</span>
+    <span class="tech-logo">Next.js</span>
+    <span class="tech-logo">Laravel</span>
+    <span class="tech-logo">Vue.js</span>
+    <span class="tech-logo">PostgreSQL</span>
+    <span class="tech-logo">MongoDB</span>
+    <span class="tech-logo">TypeScript</span>
+    <span class="tech-logo">Docker</span>
+    <span class="tech-logo">AWS</span>
+    <span class="tech-logo">Figma</span>
+    <span class="tech-logo">Python</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="tech-logo">React.js</span>
+    <span class="tech-logo">Node.js</span>
+    <span class="tech-logo">Next.js</span>
+    <span class="tech-logo">Laravel</span>
+    <span class="tech-logo">Vue.js</span>
+    <span class="tech-logo">PostgreSQL</span>
+    <span class="tech-logo">MongoDB</span>
+    <span class="tech-logo">TypeScript</span>
+    <span class="tech-logo">Docker</span>
+    <span class="tech-logo">AWS</span>
+    <span class="tech-logo">Figma</span>
+    <span class="tech-logo">Python</span>
+  </div>
+</div>
+
+<!-- =============================================
+     À PROPOS
+============================================= -->
+<section class="section about" id="apropos">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Visual side -->
+      <div class="about-visual reveal-left">
+        <div class="about-card about-card-main">
+          <div class="eyebrow" style="margin-bottom:12px;">Notre identité</div>
+          <h3 class="display-md" style="margin-bottom:14px; position:relative; z-index:1;">Transformer le digital en avantage concurrentiel</h3>
+          <p class="body-md" style="position:relative; z-index:1;">Depuis notre création, nous avons accompagné des dizaines d'entreprises dans leur transformation numérique, en livrant des solutions robustes, évolutives et parfaitement alignées avec leurs objectifs.</p>
+        </div>
+        <div class="about-floating-stat">
+          <div class="num">50+</div>
+          <div class="lbl">Projets livrés</div>
+        </div>
+        <div class="about-code-card">
+          <div class="line-muted">// Socom Web Agency</div>
+          <div><span style="color:#7dd3fc">const</span> mission = {</div>
+          <div>&nbsp;&nbsp;build: <span style="color:#86efac">"excellence"</span>,</div>
+          <div>&nbsp;&nbsp;deliver: <span style="color:#86efac">"impact"</span></div>
+          <div>};</div>
+        </div>
+      </div>
+
+      <!-- Text side -->
+      <div class="reveal-right">
+        <span class="eyebrow">À propos de Socom</span>
+        <h2 class="display-lg" style="margin:14px 0 20px;">Nous construisons le futur digital de votre entreprise</h2>
+        <p class="body-lg" style="margin-bottom:36px;">
+          Socom Web Agency est une agence spécialisée dans le développement de solutions digitales premium pour les entreprises, organisations et entrepreneurs. Nous unissons design, technologie et stratégie pour créer des expériences numériques qui génèrent des résultats mesurables.
+        </p>
+        <div class="mvv">
+          <div class="mvv-item">
+            <div class="mvv-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="mvv-text">
+              <h4>Notre Mission</h4>
+              <p>Aider les entreprises à améliorer leur visibilité, automatiser leurs processus et accélérer leur croissance grâce à des solutions numériques modernes et sur mesure.</p>
+            </div>
+          </div>
+          <div class="mvv-item">
+            <div class="mvv-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+            </div>
+            <div class="mvv-text">
+              <h4>Notre Vision</h4>
+              <p>Devenir le partenaire digital de référence en Afrique francophone, en démocratisant l'accès aux technologies de pointe pour toutes les entreprises.</p>
+            </div>
+          </div>
+          <div class="mvv-item">
+            <div class="mvv-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div class="mvv-text">
+              <h4>Nos Valeurs</h4>
+              <p>Excellence technique, transparence absolue, respect des délais et accompagnement long terme. Votre succès est notre mesure de performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SERVICES
+============================================= -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="eyebrow">Ce que nous faisons</span>
+      <h2 class="display-lg">Des solutions pensées pour <span class="text-gradient">votre croissance</span></h2>
+      <p class="body-md" style="margin-top:16px;">De la conception à la mise en production, nous prenons en charge l'intégralité de votre projet digital avec une expertise technique de haut niveau.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service 1 -->
+      <div class="service-card reveal delay-1">
+        <span class="service-num">01</span>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+        </div>
+        <h3>Développement Web</h3>
+        <p>Des sites web performants, modernes et parfaitement optimisés pour convertir vos visiteurs en clients. Chaque pixel est pensé pour l'impact.</p>
+        <ul class="service-list">
+          <li>Sites vitrines & corporate</li>
+          <li>Portfolios professionnels</li>
+          <li>Plateformes web sur mesure</li>
+          <li>Refonte & optimisation</li>
+        </ul>
+        <div class="service-arrow">
+          En savoir plus
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card reveal delay-2">
+        <span class="service-num">02</span>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+        </div>
+        <h3>Développement d'Applications</h3>
+        <p>Des applications web et desktop robustes, évolutives et sécurisées. Nous construisons des outils qui accompagnent la croissance de votre business.</p>
+        <ul class="service-list">
+          <li>Applications web progressives</li>
+          <li>Applications desktop</li>
+          <li>Systèmes de gestion personnalisés</li>
+          <li>Plateformes métiers</li>
+        </ul>
+        <div class="service-arrow">
+          En savoir plus
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card reveal delay-3">
+        <span class="service-num">03</span>
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Solutions Digitales</h3>
+        <p>Automatisation des processus, digitalisation des flux et transformation numérique complète. Gagnez en efficacité et réduisez vos coûts opérationnels.</p>
+        <ul class="service-list">
+          <li>Digitalisation des processus</li>
+          <li>Automatisation des tâches</li>
+          <li>Transformation numérique</li>
+          <li>Outils de gestion sur mesure</li>
+        </ul>
+        <div class="service-arrow">
+          En savoir plus
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     POURQUOI NOUS
+============================================= -->
+<section class="section why-us" id="pourquoi">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <span class="eyebrow reveal">Pourquoi Socom</span>
+        <h2 class="display-lg reveal delay-1" style="margin:14px 0 20px;">L'expertise qui fait la <span class="text-gradient">différence</span></h2>
+        <p class="body-md reveal delay-2" style="margin-bottom:36px;">Nous ne livrons pas seulement du code — nous livrons des solutions qui ont un impact réel sur votre performance commerciale et votre croissance.</p>
+        <div class="why-items">
+          <div class="why-item reveal delay-1">
+            <div class="why-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div>
+              <h4>Solutions 100% sur mesure</h4>
+              <p>Chaque projet est unique. Nous concevons des solutions adaptées précisément à vos besoins, votre budget et vos objectifs métiers.</p>
+            </div>
+          </div>
+          <div class="why-item reveal delay-2">
+            <div class="why-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Accompagnement personnalisé</h4>
+              <p>Un interlocuteur dédié tout au long du projet. Communication transparente, rapports réguliers et disponibilité à toutes les étapes.</p>
+            </div>
+          </div>
+          <div class="why-item reveal delay-3">
+            <div class="why-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+            </div>
+            <div>
+              <h4>Technologies modernes & performantes</h4>
+              <p>Nous utilisons les frameworks et architectures les plus récents pour garantir performance, sécurité et évolutivité de vos solutions.</p>
+            </div>
+          </div>
+          <div class="why-item reveal delay-4">
+            <div class="why-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+            </div>
+            <div>
+              <h4>Résultats concrets et mesurables</h4>
+              <p>Nous nous engageons sur des livrables précis avec des KPIs clairs. Votre ROI est au cœur de chaque décision technique et stratégique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-stats reveal-right">
+        <div class="why-stat">
+          <div class="why-stat-num counter" data-target="50">0</div>
+          <div class="why-stat-label">Projets réalisés avec succès</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-num counter" data-target="40">0</div>
+          <div class="why-stat-label">Clients satisfaits & fidèles</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-num">98%</div>
+          <div class="why-stat-label">Taux de satisfaction client</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-num counter" data-target="3">0</div>
+          <div class="why-stat-label">Années d'expertise digitale</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     RÉALISATIONS
+============================================= -->
+<section class="section" id="realisations">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="eyebrow">Portfolio</span>
+      <h2 class="display-lg">Nos <span class="text-gradient">réalisations</span></h2>
+      <p class="body-md" style="margin-top:16px;">Des projets concrets qui illustrent notre capacité à transformer des idées ambitieuses en solutions digitales remarquables.</p>
+    </div>
+
+    <div class="portfolio-filters reveal delay-1">
+      <button class="filter-btn active">Tous</button>
+      <button class="filter-btn">Développement Web</button>
+      <button class="filter-btn">Applications</button>
+      <button class="filter-btn">Solutions Digitales</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="portfolio-card reveal delay-1">
+        <div class="portfolio-thumb">
+          <div class="mock-screen mock-school">
+            <div class="mock-inner">
+              <div class="mock-icon">🏫</div>
+              <div class="mock-label">Établissement scolaire</div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:8px 16px;">Voir le projet</span>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Développement Web</span>
+          <h3>EduConnect — Site d'École</h3>
+          <p>Plateforme web complète pour un établissement scolaire : présentation, actualités, espace parents et système d'inscription en ligne.</p>
+          <div class="portfolio-tech">
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Tailwind</span>
+            <span class="tech-pill">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-card reveal delay-2">
+        <div class="portfolio-thumb">
+          <div class="mock-screen mock-hotel">
+            <div class="mock-inner">
+              <div class="mock-icon">🏨</div>
+              <div class="mock-label">Hôtellerie & Tourisme</div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:8px 16px;">Voir le projet</span>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Plateforme Web</span>
+          <h3>LuxeStay — Réservation Hôtelière</h3>
+          <p>Plateforme de réservation en ligne pour un groupe hôtelier avec gestion des disponibilités, paiements sécurisés et tableau de bord administrateur.</p>
+          <div class="portfolio-tech">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">Stripe</span>
+            <span class="tech-pill">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-card reveal delay-3">
+        <div class="portfolio-thumb">
+          <div class="mock-screen mock-stock">
+            <div class="mock-inner">
+              <div class="mock-icon">📦</div>
+              <div class="mock-label">Gestion & Logistique</div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:8px 16px;">Voir le projet</span>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Application Desktop</span>
+          <h3>StockPro — Gestion de Stock</h3>
+          <p>Application desktop de gestion d'inventaire avec suivi en temps réel, alertes de réapprovisionnement et rapports analytiques avancés.</p>
+          <div class="portfolio-tech">
+            <span class="tech-pill">Electron</span>
+            <span class="tech-pill">Vue.js</span>
+            <span class="tech-pill">SQLite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="portfolio-card reveal delay-1">
+        <div class="portfolio-thumb">
+          <div class="mock-screen mock-scolaire">
+            <div class="mock-inner">
+              <div class="mock-icon">🎓</div>
+              <div class="mock-label">Gestion scolaire</div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:8px 16px;">Voir le projet</span>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Application Web</span>
+          <h3>SchoolManager — Gestion Scolaire</h3>
+          <p>Système complet de gestion scolaire : notes, emplois du temps, absences, bulletins automatisés et communication école-famille.</p>
+          <div class="portfolio-tech">
+            <span class="tech-pill">Laravel</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="portfolio-card reveal delay-2">
+        <div class="portfolio-thumb">
+          <div class="mock-screen mock-ecom">
+            <div class="mock-inner">
+              <div class="mock-icon">🛒</div>
+              <div class="mock-label">Commerce en ligne</div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:8px 16px;">Voir le projet</span>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">E-commerce</span>
+          <h3>ShopFlow — Boutique en ligne</h3>
+          <p>Boutique e-commerce complète avec catalogue produits, panier, paiement Mobile Money, gestion des commandes et analytics temps réel.</p>
+          <div class="portfolio-tech">
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Prisma</span>
+            <span class="tech-pill">CinetPay</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="portfolio-card reveal delay-3">
+        <div class="portfolio-thumb">
+          <div class="mock-screen mock-resto">
+            <div class="mock-inner">
+              <div class="mock-icon">🍽️</div>
+              <div class="mock-label">Restauration</div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="btn btn-primary" style="font-size:0.8rem;padding:8px 16px;">Voir le projet</span>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Solution Digitale</span>
+          <h3>TableReserv — Gestion Restaurant</h3>
+          <p>Système de réservation de tables en ligne, gestion des menus, commandes digitales et tableau de bord de performance pour restaurateurs.</p>
+          <div class="portfolio-tech">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Express</span>
+            <span class="tech-pill">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     PROCESSUS
+============================================= -->
+<section class="section process" id="processus">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="eyebrow">Notre méthode</span>
+      <h2 class="display-lg">Un processus <span class="text-gradient">éprouvé</span>, des résultats garantis</h2>
+      <p class="body-md" style="margin-top:16px;">Chaque projet suit une méthodologie rigoureuse qui garantit qualité, respect des délais et satisfaction totale.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal delay-1">
+        <div class="process-dot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h4>Analyse</h4>
+        <p>Compréhension profonde de vos besoins, objectifs et contraintes pour cadrer parfaitement le projet.</p>
+      </div>
+      <div class="process-step reveal delay-2">
+        <div class="process-dot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h4>Conception</h4>
+        <p>Wireframes, maquettes UI/UX et architecture technique validés avec vous avant le développement.</p>
+      </div>
+      <div class="process-step reveal delay-3">
+        <div class="process-dot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+        </div>
+        <h4>Développement</h4>
+        <p>Codage avec les meilleures pratiques, revues régulières et accès à un environnement de test.</p>
+      </div>
+      <div class="process-step reveal delay-4">
+        <div class="process-dot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h4>Tests</h4>
+        <p>Tests fonctionnels, de performance et de sécurité approfondis sur tous les appareils et navigateurs.</p>
+      </div>
+      <div class="process-step reveal delay-5">
+        <div class="process-dot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <h4>Livraison</h4>
+        <p>Déploiement sur vos serveurs, formation des équipes et remise complète de la documentation.</p>
+      </div>
+      <div class="process-step reveal delay-5">
+        <div class="process-dot">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </div>
+        <h4>Support</h4>
+        <p>Maintenance continue, mises à jour régulières et support technique dédié après la mise en ligne.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     TÉMOIGNAGES
+============================================= -->
+<section class="section" id="temoignages">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="eyebrow">Témoignages</span>
+      <h2 class="display-lg">Ce que disent nos <span class="text-gradient">clients</span></h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testi-card reveal delay-1">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-text">Socom Web Agency a transformé notre présence en ligne de manière spectaculaire. Le site livré dépasse toutes nos attentes — moderne, rapide et parfaitement optimisé. Notre trafic a augmenté de 340% en trois mois.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AK</div>
+          <div>
+            <div class="testi-name">Amara Kaboré</div>
+            <div class="testi-role">Directeur Général — Kaboré Industries</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal delay-2">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-text">Notre application de gestion scolaire a été développée en parfaite collaboration avec l'équipe Socom. Délais respectés, qualité irréprochable et support réactif. Je recommande sans réserve !</p>
+        <div class="testi-author">
+          <div class="testi-avatar">FD</div>
+          <div>
+            <div class="testi-name">Fatoumata Diallo</div>
+            <div class="testi-role">Directrice — Complexe Scolaire Les Étoiles</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal delay-3">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-text">La plateforme de réservation qu'ils ont construite pour notre hôtel fonctionne parfaitement. Nos réservations en ligne ont bondi de 200% dès le premier mois. L'équipe est professionnelle et à l'écoute.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MT</div>
+          <div>
+            <div class="testi-name">Moussa Touré</div>
+            <div class="testi-role">Propriétaire — Hôtel Le Palmier d'Or</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal delay-1">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-text">StockPro a révolutionné notre gestion d'inventaire. Fini les erreurs de stock ! L'application est intuitive et nos équipes l'ont adoptée en quelques jours. Un investissement rentabilisé en moins de deux mois.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">ES</div>
+          <div>
+            <div class="testi-name">Emmanuel Sodjiédou</div>
+            <div class="testi-role">Gérant — Distribution ESODA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal delay-2">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-text">Un partenariat exceptionnel. Socom a su comprendre notre vision et l'a traduite en une boutique en ligne magnifique et performante. Le suivi après livraison est remarquable — ils sont toujours disponibles.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">NK</div>
+          <div>
+            <div class="testi-name">Nadia Konaté</div>
+            <div class="testi-role">Fondatrice — Boutique Élégance Africaine</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal delay-3">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-text">Grâce à la digitalisation de nos processus par Socom, nous économisons 15 heures de travail administratif par semaine. Le ROI est impressionnant et l'équipe est d'une professionnalisme absolu.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">BO</div>
+          <div>
+            <div class="testi-name">Brice Ouédraogo</div>
+            <div class="testi-role">DG — Cabinet Conseil BCS Partners</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FAQ
+============================================= -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="display-lg">Questions <span class="text-gradient">fréquentes</span></h2>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Quels sont vos délais de réalisation habituels ?
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Les délais varient selon la complexité du projet. Un site vitrine prend généralement 2 à 4 semaines, une application web de 4 à 10 semaines, et une solution digitale complexe de 2 à 6 mois. Nous vous communiquons un calendrier précis dès la phase d'analyse et nous nous engageons à le respecter.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Comment se déroule la collaboration et la communication ?
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Vous avez un interlocuteur dédié tout au long du projet. Nous utilisons des outils collaboratifs (Notion, Figma, Slack) pour une transparence totale. Des points de suivi réguliers sont organisés chaque semaine, et vous avez accès à un environnement de test pour valider chaque fonctionnalité.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Quel est votre mode de facturation et de paiement ?
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Nous travaillons généralement avec un système de paiement en trois tranches : 40% à la signature du contrat, 30% à mi-projet (validation des maquettes), et 30% à la livraison finale. Nous acceptons les virements bancaires, Mobile Money (MTN, Moov) et les paiements en ligne.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Proposez-vous un service de maintenance après livraison ?
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Absolument ! Nous proposons des contrats de maintenance mensuelle qui incluent les mises à jour de sécurité, les corrections de bugs, les sauvegardes régulières et un support technique prioritaire. Nous restons votre partenaire sur le long terme.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Peut-on vous confier la refonte d'un site existant ?
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Oui, la refonte de sites existants représente une part importante de notre activité. Nous commençons par un audit complet (performance, SEO, UX, sécurité) avant de vous proposer une stratégie de refonte optimale, sans perte de données ni de référencement.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Vos solutions sont-elles adaptées au marché africain ?
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Tout à fait. Nous intégrons nativement les solutions de paiement africaines (Mobile Money, CinetPay, Orange Money), optimisons pour les connexions à faible débit, et adaptons chaque solution aux réalités du marché local tout en maintenant des standards internationaux.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     CONTACT
+============================================= -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow reveal">Contactez-nous</span>
+        <h2 class="display-lg reveal delay-1" style="margin:14px 0 20px;">Parlons de votre <span class="text-gradient">projet</span></h2>
+        <p class="body-md reveal delay-2" style="margin-bottom:40px;">Vous avez un projet en tête ou des questions ? Notre équipe est disponible pour échanger avec vous et vous proposer la solution la plus adaptée.</p>
+
+        <div class="contact-channels reveal delay-3">
+          <a href="https://wa.me/22900000000" class="contact-channel" target="_blank">
+            <div class="contact-channel-icon channel-whatsapp">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#22C55E"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel-label">WhatsApp</div>
+              <div class="contact-channel-val">+229 00 00 00 00</div>
+            </div>
+          </a>
+          <a href="mailto:contact@socomwebagency.com" class="contact-channel">
+            <div class="contact-channel-icon channel-email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel-label">Email</div>
+              <div class="contact-channel-val">contact@socomwebagency.com</div>
+            </div>
+          </a>
+          <a href="tel:+22900000000" class="contact-channel">
+            <div class="contact-channel-icon channel-phone">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.72 6.72l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel-label">Téléphone</div>
+              <div class="contact-channel-val">+229 00 00 00 00</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="social-links reveal delay-4" style="margin-top:28px;">
+          <a href="#" class="social-link" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Twitter/X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form reveal-right">
+        <h3 class="display-md" style="margin-bottom:28px;">Demande de devis</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nom complet *</label>
+            <input type="text" placeholder="Jean Dupont" />
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" placeholder="jean@entreprise.com" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" placeholder="+229 XX XX XX XX" />
+          </div>
+          <div class="form-group">
+            <label>Entreprise</label>
+            <input type="text" placeholder="Votre entreprise" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Type de projet *</label>
+          <select>
+            <option value="">Sélectionnez un service</option>
+            <option>Site vitrine / corporate</option>
+            <option>Application web</option>
+            <option>Application desktop</option>
+            <option>Plateforme e-commerce</option>
+            <option>Solution de gestion sur mesure</option>
+            <option>Digitalisation des processus</option>
+            <option>Refonte de site existant</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Budget estimé</label>
+          <select>
+            <option value="">Fourchette budgétaire</option>
+            <option>Moins de 500 000 FCFA</option>
+            <option>500 000 – 1 500 000 FCFA</option>
+            <option>1 500 000 – 5 000 000 FCFA</option>
+            <option>Plus de 5 000 000 FCFA</option>
+            <option>À définir ensemble</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Description du projet *</label>
+          <textarea placeholder="Décrivez votre projet, vos objectifs, vos contraintes et tout élément qui nous aidera à mieux vous accompagner..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="submitForm()">
+          Envoyer ma demande
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:16px;text-align:center;">Réponse garantie sous 24h ouvrées — Devis gratuit et sans engagement</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER
+============================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>
+          <div class="logo-mark" style="width:30px;height:30px;border-radius:7px;background:var(--blue-core);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;">S</div>
+          Socom Web Agency
+        </h3>
+        <p>Votre partenaire digital de confiance pour créer, automatiser et accélérer votre présence numérique. Solutions premium pour entreprises ambitieuses.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Développement Web</a></li>
+          <li><a href="#services">Applications Web</a></li>
+          <li><a href="#services">Applications Desktop</a></li>
+          <li><a href="#services">Solutions Digitales</a></li>
+          <li><a href="#services">Transformation numérique</a></li>
+          <li><a href="#services">Refonte de sites</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Agence</h4>
+        <ul>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#realisations">Portfolio</a></li>
+          <li><a href="#processus">Notre processus</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@socomwebagency.com">contact@socomwebagency.com</a></li>
+          <li><a href="tel:+22900000000">+229 00 00 00 00</a></li>
+          <li><a href="#">Cotonou, Bénin</a></li>
+          <li><a href="#">Afrique de l'Ouest</a></li>
+        </ul>
+        <div style="margin-top:20px;">
+          <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;display:inline-flex;">Devis gratuit →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Socom Web Agency. Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">CGV</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <span class="toast-icon">✓</span>
+  <span>Votre demande a été envoyée ! Nous vous répondrons sous 24h.</span>
+</div>
+
+<!-- Back to top -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<!-- =============================================
+     JAVASCRIPT
+============================================= -->
+<script src="script.js"></script>
+</body>
+</html>
